@@ -21,7 +21,7 @@
 		color: lightgrey
 
 	button:hover
-	color: #000
+		color: #000
 	
 	input
 		color: lightgrey
@@ -56,6 +56,8 @@
 
 //Artykuły (podstrony)
 .about-us
+	text-align: justify
+
 	img
 		display: none //img niewidoczny w treści
 
@@ -64,10 +66,63 @@
 			display: initial //ale widoczny na liście aktualności
 			border-radius: 4px
 
-	.visible-img //dodać jak chcemy, żeby img był widoczny
-		display: initial
-		border-radius: 4px
-		margin-bottom: 20px
+	h2
+		font-size: 23px
+
+	blockquote
+		margin-top: 20px
+		margin-left: 10px
+
+	.art-link:hover
+		color: #428bca
+
+	.visible-img
+		display: initial //dodać to id do obrazka jak chcemy, żeby był widoczny
+		border-radius: 15px		
+		padding: 8px
+
+	.art-img
+		width: 35% //img w artykułach
+
+	.img-right
+		float: right //img do prawej
+		margin-top: -67px
+		margin-left: 20px
+
+	#img-zus
+		float: right
+		width: 26%
+		margin-top: -15px
+		margin-left: 20px
+
+	.art-footer-quote
+		font-size: 80% //podpis pod cytatem
+		line-height: 1.42857143
+		color: #777
+
+	.art-source
+		font-style: italic
+
+	.art-footer
+		padding-top: 20px
+		margin-bottom: -40px
+
+	.AM
+		float: right
+		font-weight: bold
+		margin-right: 10px		
 
 .polecane
 	@import ./subpages/polecane.sass
+
+
+//strona 404
+.not-found
+	@import ./subpages/not-found.sass
+
+.no-overflow
+	overflow: hidden //brak scrolla na stronie 404
+
+
+//landing page dla klientów
+@import ./subpages/landing-customers.sass
