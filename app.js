@@ -1,2 +1,2 @@
-require("./App.sass")
 
+require("./App.sass")
