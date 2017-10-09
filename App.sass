@@ -112,13 +112,30 @@
 		font-style: italic
 
 	.art-footer
-		padding-top: 20px
+		padding-top: 50px
 		margin-bottom: -40px
 
 	.AM
 		float: right
 		font-weight: bold
-		margin-right: 10px		
+		margin-right: 10px
+
+	#taxi
+		float: left
+		width: 60%
+		margin-bottom: 20px
+		margin-top: -20px
+	@media (max-width: 767px)
+		#taxi
+			width: 100%
+	@media (min-width: 1170px)
+		#taxi
+			margin-top: 0 !important
+
+	#taxi-sumup
+		clear: both
+		margin-top: 10px
+
 
 .polecane
 	@import ./subpages/polecane.sass
