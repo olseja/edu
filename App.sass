@@ -65,6 +65,7 @@
 //Artykuły (podstrony)
 .about-us
 	text-align: justify
+	line-height: 1.6
 
 	img
 		display: none //img niewidoczny w treści
@@ -97,6 +98,16 @@
 		margin-top: -67px
 		margin-left: 20px
 
+	.infografic
+		display: block
+		float: none
+		margin: auto
+		width: 50%
+
+	@media (max-width: 767px)
+		.infografic
+			width: 100%
+
 	#img-zus
 		float: right
 		width: 26%
@@ -119,6 +130,15 @@
 		float: right
 		font-weight: bold
 		margin-right: 10px
+
+	.border-right-grey
+		border-right: 1px solid #ddd
+
+	.border-bottom-grey
+		border-bottom: 1px solid #ddd
+
+	.middle
+		vertical-align: middle
 
 	#taxi
 		float: left
