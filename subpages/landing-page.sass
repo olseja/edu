@@ -276,8 +276,29 @@
 		margin-top: 4%
 
 		&.btn-firms
-			margin-left: 20%
-			margin-top: 3%	
+			width: 61%
+			margin-left: 0
+			margin-top: 3%
+
+	@media (max-width: 767px)
+		.btn-firms
+			width: 100% !important
+
+	@media (min-width: 768px) and (max-width: 991px)
+		.btn-firms
+			width: 86% !important
+
+	@media (min-width: 992px) and (max-width: 1199px)
+		.btn-firms
+			width: 74% !important
+
+	@media (min-width: 1200px) and (max-width: 1919px)
+		.btn-firms
+			width: 77% !important
+
+	@media (min-width: 2560px)
+		.btn-firms
+			width: 67% !important
 
 @media (max-width: 767px)
 	.landing-banner-desc
@@ -508,6 +529,9 @@
 		.profits
 			img
 				margin-bottom: 0
+
+			.firms-br
+				margin-bottom: -22px
 				
 
 @media (min-width: 992px) and (max-width: 1199px)
@@ -680,7 +704,7 @@
 
 @media (min-width: 768px) and (max-width: 991px)
 	.landing-middle-4
-		height: 220px
+		height: 235px
 		padding-top: 20px
 		background-position: 40% 35%
 
@@ -705,6 +729,7 @@
 
 @media (min-width: 2560px)
 	.landing-middle-4
+		height: 320px
 		background-size: cover
 		background-position: 0 31%	
 		margin-bottom: 100px	
