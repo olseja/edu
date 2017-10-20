@@ -1,36 +1,102 @@
 .main-content
-	background: url("subpages/blad2.jpg")
-	background-repeat: no-repeat	
-	height: 1500px
-	font-size: 24px
-	overflow: hidden
-	display: block
+	background: none
 
-.category
-	margin: auto
-	display: block
-	width: 70%
-	margin-top: 20%
-	margin-right: 40px
-	border: 3px solid #8e1537
-	line-height: 150px
-	text-align: center
+.wrapper
+	position: static
+	background-image: url("/img/404bg.jpg")
 
-.category
-	li
-		display: inline	
-		list-style-type: none
-		padding-left: 10px
 
-	li:first-child
-		padding-left: 0px
+.about-us
+	border: 2px solid #ddd
+	border-radius: 4px
+	//background-image: url("./subpages/Fotolia_115925611_S_404.jpg")
+	background-repeat: no-repeat
+	//background-position: left top
+	background-position: 7% 65%
+	background-image: url("/img/404-info.png")
+	//background-size: 500px
+	height: 600px
+	padding: 20px
+	margin-top: 120px
+	
+	.title-404
+		font-size: 30px
+		text-align: center
+		margin-bottom: 30px
 
-	li:last-child
-		padding-right: 10px
+	.content
+		float: right
+		width: 50%
+		border-left: 1px solid #ddd
+		padding: 15px
+		padding-left: 30px
 
-	li.li::after
-		content: ""
-		border-right: 2px solid grey
-		padding: 29px 0 24px 0
-		margin-left: 20px
-		color: green
+		
+		.search-content
+			width: 50%
+			background: none
+			height: 100%
+			margin: auto
+			padding: 0
+
+			input[type="text"]
+				border-radius: 5px 0 0 5px
+
+			input[type="text"]::-webkit-input-placeholder
+				color: #848484
+
+			input[type="text"]::-moz-placeholder
+				color: #848484
+
+			input[type="text"]:-ms-input-placeholder
+				color: #848484
+
+			.btn-404
+				padding: 0 20px
+				background-color: forestgreen
+				font-weight: normal
+				margin-left: -15px
+				height: 46px
+				line-height: 49px
+				font-size: 16px
+				border-radius: 0 5px 5px 0
+
+			.btn-404:hover
+				background-color: #1D771D				
+		
+		.categories
+			width: 100%
+			margin-top: 100px
+			clear: both
+
+			.category
+				border: 1px solid grey
+				display: inline-block
+				width: 45%
+				margin: 5px
+				float: left
+				text-align: center
+
+
+		.social-404
+			clear: both
+			margin-top: 300px		
+
+			p
+				display: inline-block
+				float: left				
+				margin-right: 20px
+				text-transform: uppercase
+				font-weight: bold
+				font-size: 18px				
+			
+			ul
+				li
+					display: inline-block
+			
+				img
+					display: initial
+					margin-right: 10px
+					margin-top: 7px
+					width: 45px
+
