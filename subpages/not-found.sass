@@ -1,4 +1,6 @@
 .main-content
+	overflow: auto
+	padding-bottom: 100px
 	background: none
 
 .wrapper
@@ -9,15 +11,12 @@
 .about-us
 	border: 2px solid #ddd
 	border-radius: 4px
-	//background-image: url("./subpages/Fotolia_115925611_S_404.jpg")
 	background-repeat: no-repeat
-	//background-position: left top
 	background-position: 7% 65%
 	background-image: url("/img/404-info.png")
-	//background-size: 500px
 	height: 600px
 	padding: 20px
-	margin-top: 120px
+	margin-top: 100px
 	
 	.title-404
 		font-size: 30px
@@ -30,6 +29,9 @@
 		border-left: 1px solid #ddd
 		padding: 15px
 		padding-left: 30px
+
+		a
+			color: #8c1919
 
 		
 		.search-content
@@ -65,18 +67,58 @@
 				background-color: #1D771D				
 		
 		.categories
-			width: 100%
-			margin-top: 100px
+			width: 100%			
+			margin-top: 110px			
 			clear: both
 
 			.category
-				border: 1px solid grey
+				border: 1px solid #AAAAAA //#bbbfc0	
+				text-transform: uppercase
+				color: darkslategrey						
+				border-radius: 4px
 				display: inline-block
-				width: 45%
-				margin: 5px
+				width: 46.5%
+				margin: 5px				
+				padding: 8px 0
 				float: left
 				text-align: center
+				background-color: #AAAAAA
+				color: #fff
+				transition: all 0.5s
 
+				span
+					position: relative
+					display: inline-block
+					transition: 0.5s
+
+					&:after
+						content: '\00bb'
+						position: absolute
+						opacity: 0
+						top: 0
+						right: -20px
+						transition: 0.5s
+
+			.category:hover
+				background-color: forestgreen
+				border: 1px solid forestgreen
+
+			.category:hover span
+				padding-right: 15px				
+
+			.category:hover span:after
+				opacity: 1
+				right: 0								
+
+			button:nth-child(odd)
+				margin-left: 0
+
+			button:nth-child(even)
+				margin-right: 0
+
+			.category:hover
+				cursor: pointer				
+			
 
 		.social-404
 			clear: both
@@ -99,4 +141,64 @@
 					margin-right: 10px
 					margin-top: 7px
 					width: 45px
+
+@media (min-width: 768px) and (max-width: 992px)
+	.about-us
+		margin-top: 20px
+		padding: 0
+		background-size: 46%
+		background-position: 4% 48%
+		height: 450px
+
+		.title-404
+			font-size: 22px
+			margin-top: 20px
+			margin-bottom: 20px
+
+		.content
+			padding: 10px
+
+			.search-content
+				width: 100% !important
+				margin-left: -10px
+			
+			.categories
+				margin-top: 0
+
+				.category
+					width: 100% !important
+
+			.social-404
+				margin-left: -350px
+				margin-top: -100px
+
+@media (min-width: 993px) and (max-width: 1199px)
+	.about-us
+		background-size: 45%
+		background-position: 5% 65%
+		padding: 4px
+		margin-top: 100px
+
+		.content
+			padding: 10px
+			padding-left: 20px
+
+			.wrapper
+				width: 100%
+
+				.search-content
+					width: 100% !important
+					margin: auto
+
+			.categories
+				.category
+					width: 43.5%
+
+				button:nth-child(odd)
+					margin-left: 15px
+				
+
+@media (min-width: 2560px)
+	.about-us
+		margin-top: 150px
 
