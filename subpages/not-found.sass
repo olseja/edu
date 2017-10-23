@@ -26,8 +26,7 @@
 	.content
 		float: right
 		width: 50%
-		border-left: 1px solid #ddd
-		padding: 15px
+		border-left: 1px solid #ddd		
 		padding-left: 30px
 
 		a
@@ -64,7 +63,10 @@
 				border-radius: 0 5px 5px 0
 
 			.btn-404:hover
-				background-color: #1D771D				
+				background-color: #1D771D
+
+			.date
+				display: none		
 		
 		.categories
 			width: 100%			
@@ -142,13 +144,67 @@
 					margin-top: 7px
 					width: 45px
 
+@media (max-width: 767px)
+	.main-content
+		background-image: url("/img/404bg.jpg")		
+
+	.wrapper
+		background: none
+		padding: 0
+
+	.about-us
+		background: none		
+		padding: 10px
+		margin-top: 0
+		border: none
+		height: 520px		
+
+		.title-404
+			font-size: 20px
+			margin-bottom: 5px
+			font-weight: bold
+
+		.content
+			width: 100%			
+			border: none	
+			padding: 0		
+
+			.search-content
+				width: 100%
+				margin-bottom: 15px
+
+				input[type="text"]
+					border-radius: 0
+					margin: 0
+
+				.btn-404
+					width: 100%
+					margin: auto
+					border-radius: 0
+
+			.category
+				width: 100% !important				
+				border-radius: 0 !important
+				margin: 3px 0 !important
+
+			.btn-contact
+				margin-bottom: 12px !important
+
+			.social-404
+				margin-top: 0
+
+				img
+					margin-right: 0 !important
+					width: 40px !important
+					margin-top: 10px !important
+
 @media (min-width: 768px) and (max-width: 992px)
 	.about-us
 		margin-top: 20px
 		padding: 0
 		background-size: 46%
 		background-position: 4% 48%
-		height: 450px
+		height: 550px
 
 		.title-404
 			font-size: 22px
@@ -163,14 +219,14 @@
 				margin-left: -10px
 			
 			.categories
-				margin-top: 0
+				margin-top: 100px
 
 				.category
 					width: 100% !important
 
 			.social-404
 				margin-left: -350px
-				margin-top: -100px
+				margin-top: 0
 
 @media (min-width: 993px) and (max-width: 1199px)
 	.about-us
@@ -178,10 +234,11 @@
 		background-position: 5% 65%
 		padding: 4px
 		margin-top: 100px
+		margin-bottom: 20px
 
 		.content
-			padding: 10px
-			padding-left: 20px
+			//padding: 10px
+			//padding-left: 20px
 
 			.wrapper
 				width: 100%
@@ -197,6 +254,19 @@
 				button:nth-child(odd)
 					margin-left: 15px
 				
+@media (min-width: 1200px) and (max-width: 1919px)
+	.about-us
+		height: 550px
+
+	.content
+//		padding: 0
+
+
+	.title-404
+		margin-bottom: 5px
+
+	.social-404
+		margin-top: 250px
 
 @media (min-width: 2560px)
 	.about-us
