@@ -86,12 +86,15 @@
 		color: #428bca
 
 	.visible-img
-		display: initial //dodać to id do obrazka jak chcemy, żeby był widoczny
+		display: initial //dodać do obrazka jak chcemy, żeby był widoczny
 		border-radius: 15px		
 		padding: 8px
 
 	.art-img
 		width: 35% //img w artykułach
+
+	.art-title
+		margin-top: 50px		
 
 	.img-right
 		float: right //img do prawej
@@ -144,7 +147,7 @@
 		float: left
 		width: 60%
 		margin-bottom: 20px
-		margin-top: -20px
+		margin-top: -20px		
 	@media (max-width: 767px)
 		#taxi
 			width: 100%
@@ -155,6 +158,42 @@
 	#taxi-sumup
 		clear: both
 		margin-top: 10px
+
+	.rodo-mark
+		color: forestgreen
+
+	.bold
+		font-weight: bold
+
+	.art-tooltip 
+		position: relative //tooltip w artykłuach
+		display: inline-block
+
+	.art-tooltiptext
+		position: absolute
+		display: none
+		background-color: #FFF
+		width: 350%
+		padding: 15px
+		border: 1px solid darkgrey
+		border-radius: 6px
+		top: -130px
+		margin-left: 15px
+		
+
+	.art-tooltip .art-tooltiptext::after
+		content: ""
+		position: absolute
+		bottom: 50%
+		left: -3%		
+		border-width: 8px
+		border-style: solid
+		border-color: transparent darkgrey transparent transparent
+
+
+	.art-tooltip:hover .art-tooltiptext
+		display: initial
+		
 
 
 .polecane
