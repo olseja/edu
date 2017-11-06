@@ -66,7 +66,10 @@
 .about-us
 	text-align: justify
 	line-height: 1.6
-
+	
+	ul
+		margin-left: 40px
+		padding: 0
 	img
 		display: none //img niewidoczny w treści
 
@@ -163,38 +166,12 @@
 		color: forestgreen
 
 	.bold
-		font-weight: bold
+		font-weight: bold	
 
-	.art-tooltip 
-		position: relative //tooltip w artykłuach
-		display: inline-block
-
-	.art-tooltiptext
-		position: absolute
-		display: none
-		background-color: #FFF
-		width: 350%
-		padding: 15px
-		border: 1px solid darkgrey
-		border-radius: 6px
-		top: -130px
-		margin-left: 15px
-		
-
-	.art-tooltip .art-tooltiptext::after
-		content: ""
-		position: absolute
-		bottom: 50%
-		left: -3%		
-		border-width: 8px
-		border-style: solid
-		border-color: transparent darkgrey transparent transparent
-
-
-	.art-tooltip:hover .art-tooltiptext
-		display: initial
-		
-
+	.read-on
+		border-bottom: 1px dotted forestgreen
+	
+	@import ./subpages/tooltips.sass 
 
 .polecane
 	@import ./subpages/polecane.sass
