@@ -69,7 +69,9 @@
 	
 	ul
 		margin-left: 40px
+		margin-top: 10px
 		padding: 0
+
 	img
 		display: none //img niewidoczny w treści
 
@@ -97,7 +99,8 @@
 		width: 35% //img w artykułach
 
 	.art-title
-		margin-top: 50px		
+		margin-top: 45px	
+		padding-bottom: 15px
 
 	.img-right
 		float: right //img do prawej
@@ -143,6 +146,9 @@
 	.border-bottom-grey
 		border-bottom: 1px solid #ddd
 
+	.border-bottom-lightgrey
+		border-bottom: 1px solid #f3f3f3
+
 	.middle
 		vertical-align: middle
 
@@ -166,10 +172,18 @@
 		color: forestgreen
 
 	.bold
-		font-weight: bold	
+		font-weight: bold
 
 	.read-on
+		top: -15px		
 		border-bottom: 1px dotted forestgreen
+
+	.glyphicon-arrow-right
+		color: grey
+
+	@media (max-width: 767px)
+		.visible-xs
+			display: initial !important
 	
 	@import ./subpages/tooltips.sass 
 

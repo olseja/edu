@@ -12,9 +12,37 @@
 	border: 1px solid darkgrey
 	border-radius: 6px
 	top: -100px
-	left: 201px	
-	box-shadow: 5px 5px lightgrey
+	left: 195px		
+	box-shadow: 15px 15px 8px lightgrey
 	z-index: 2
+
+@media (min-width: 1200px) and (max-width: 1919px)
+	.art-tooltiptext
+		width: 400%
+		height: 2000%
+		overflow: auto
+
+@media (min-width: 992px) and (max-width: 1199px)
+	.art-tooltiptext
+		left: 100px
+		width: 350%
+		height: 2000%
+		overflow: auto
+
+@media (min-width: 768px) and (max-width: 991px)
+	.art-tooltiptext
+		left: 50px
+		width: 305%
+		height: 2000%
+		overflow: auto
+
+@media (max-width: 767px)
+	.art-tooltiptext
+		left: 0
+		width: 150%
+		height: 2000%
+		overflow: auto
+		box-shadow: none
 
 .art-tooltip:hover .art-tooltiptext
 	display: initial
