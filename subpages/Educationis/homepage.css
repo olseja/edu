@@ -1,0 +1,42 @@
+.banner ul .banner-img {
+  background-image: url("/img/slider/desk&hand-3000x1372.jpg") !important;
+  top: 100px;
+  background-size: 120%;
+  background-position: 0 58%;
+  height: 550px; }
+.banner .wrapper-search {
+  float: right; }
+  .banner .wrapper-search .search-content {
+    float: right;
+    width: 900px;
+    height: 900px;
+    margin-top: -240px;
+    margin-right: 30px;
+    padding: 270px 0 0 0; }
+    .banner .wrapper-search .search-content .s-title {
+      display: none; }
+    .banner .wrapper-search .search-content .search-box {
+      width: 85%;
+      margin: auto; }
+    .banner .wrapper-search .search-content input {
+      border-radius: 6px; }
+    .banner .wrapper-search .search-content .chosen-single {
+      border-radius: 6px; }
+    .banner .wrapper-search .search-content .btn-1 {
+      width: 100%;
+      background-color: forestgreen;
+      margin-top: 20px;
+      border-radius: 6px; }
+.banner .banner-txt {
+  padding: 80px 0 0 150px;
+  height: 300px;
+  background: url("/img/bg-1.png"); }
+  .banner .banner-txt .wrapper {
+    margin: 0; }
+    .banner .banner-txt .wrapper .txt {
+      padding-bottom: 10px; }
+
+.content-box-1 .slider-1, .content-box-1 .slider-2, .content-box-1 .slider-3 {
+  padding: 15px 0 20px 0; }
+
+/*# sourceMappingURL=homepage.css.map */

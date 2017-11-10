@@ -1,0 +1,25 @@
+.header-box {
+  height: 100px;
+  padding: 10px 0; }
+  .header-box .logo img {
+    width: 200px;
+    padding-top: 7px; }
+  .header-box .main-menu {
+    padding-top: 22px; }
+  .header-box .bkt-box {
+    padding-top: 22px; }
+
+.menu-test .main-menu a {
+  float: none; }
+.menu-test .tt-dropdown:hover .tt-dropdown-text {
+  display: block; }
+.menu-test .tt-dropdown-text {
+  position: absolute;
+  background-color: lightblue;
+  padding: 15px;
+  width: 500px;
+  display: none; }
+  .menu-test .tt-dropdown-text a {
+    display: block; }
+
+/*# sourceMappingURL=header.css.map */
