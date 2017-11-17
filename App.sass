@@ -57,7 +57,7 @@
 	h2
 		border-bottom: 1px solid lightgrey
 		width: fit-content
-
+		font-size: 18px !important
 
 
 //Artykuły (podstrony)
@@ -77,9 +77,6 @@
 		img
 			display: initial //ale widoczny na liście aktualności
 			border-radius: 4px
-
-	h2
-		font-size: 23px
 
 	blockquote
 		margin-top: 20px
@@ -220,8 +217,13 @@
 
 
 //projekt Educationis
+@import ./subpages/Educationis/fonts.sass
+
 .homepage
 	@import ./subpages/Educationis/homepage.sass
+
+.subpage
+	@import ./subpages/Educationis/subpage.sass
 
 //header i footer (testowy header też)
 body
