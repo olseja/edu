@@ -8,7 +8,7 @@
 			background-image: url('/img/slider/desk&hand-3000x1372.jpg') !important					
 			background-size: 120%
 			background-position: 0 20%
-			height: 300px
+			height: 250px
 
 			.wrapper
 				float: right
@@ -33,12 +33,48 @@
 							div
 								padding: 0 !important
 
-						.row6:nth-child(5)
-							width: 25%
-							margin-left: 22px !important
-
 						input, select, .chosen-single
-							border-radius: 6px
+							border-radius: 4px
+							height: 38px
+							line-height: 38px
+							background: rgba(255, 255, 255, 0.9)
+							color: #737373
+
+						#fraza::-webkit-input-placeholder
+							color: #737373
+
+						#fraza::-moz-placeholder
+							color: #737373
+
+						#fraza::-ms-input-placeholder
+							color: #737373
+
+						.chosen-single
+							div
+								height: 7px
+								margin: 15px 10px 0 0
+
+						.chosen-results													
+							max-height: 500px
+
+							li
+								color: #737373
+								background: none
+
+								&:first-child
+									display: none
+
+								&:nth-child(2)
+									padding-top: 10px !important
+
+								&:hover
+									background-color: forestgreen
+									color: #fff
+
+						.chosen-drop
+							background: rgba(255, 255, 255, 0.9)
+							margin-top: -4px
+							border-color: #aaa						
 
 						.date
 							width: 60%
@@ -47,35 +83,67 @@
 							label
 								display: none
 
-							div				
-								div
+							.col-sm-6
+								width: 50%
+								
+								.row6
+									width: 100%
+
 									label
-										color: #fff
+										color: #737373
 										display: initial
+										background: rgba(255, 255, 255, 0.9)										
+										padding: 0 0 16px 3px										
+										border-radius: 4px 0 0 4px
+										border-top:	1px solid #bbbfc0
+										border-bottom: 1px solid #bbbfc0
+										border-left: 1px solid #bbbfc0			
+
+							#cena_do, #cena_od, #termin_od, #termin_do
+								border-radius: 0 4px 4px 0
+								border-left: none																						
 
 							.row6
 								width: 70%
 
 							.row6:nth-child(2)
-								margin-left: 20px !important							
+								margin-left: 0 !important								
 
-						.btn-1
-							background: forestgreen
-							font-family: 'Roboto Slab' , cursive !important
+							#cena_od, #cena_do
+								background: rgba(255, 255, 255, 0.9) url('/img/icons/img06.png') right center no-repeat !important
+
+							#termin_od, #termin_do
+								background: rgba(255, 255, 255, 0.9) url('/img/icons/img03.png') right center no-repeat !important								
+
+							.col-xs-5								
+								padding-right: 9px !important										
+
+						.row6:nth-child(5)
+							width: 222px
+							margin: 0 !important							
+
+							.btn-1
+								background: forestgreen
+								font-family: 'Roboto Slab' , cursive !important
+								width: 100%	
+								height: 38px
+								line-height: 38px
+								font-weight: 400			
 
 						.col-sm-6
 							width: 48%
 
 						form
 							.row6:nth-child(2)
-								margin-right: 15px !important
+								margin-right: 5px !important
+								margin-left: 0 !important
 
 								.col-sm-6:first-child
-									margin-right: 15px !important
+									margin-right: 10px !important
 
 							.row6:nth-child(3)								
 								.col-sm-6:first-child
-									margin-right: 15px !important
+									margin-right: 10px !important
 
 
 
