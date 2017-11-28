@@ -1,146 +1,125 @@
+.row
+	margin: 0
+
 .banner
-	top: 80px
-	background-image: url('/img/slider/desk&hand-3000x1372.jpg')			
-	background-size: 120%
-	background-position: 0 31%
-	height: 350px
+	top: 70px
+	height: 400px
+	overflow: unset
+
+.banner-box
+	width: 100%
+	height: 100%
+	background: no-repeat center
+	background-size: cover
+	//background-position: 0 70%
+	//background-image: url('https://download.fotolia.com/Content/CompImage500/FotoliaComp_92365513_o7ukCKN52y0AZBIWT53bZ2pcLbWHRsv5_W95')
+	background-position: 0 10%
+	background-image: url('https://t3.ftcdn.net/jpg/01/77/77/52/240_F_177775266_dWpqzJATdWK4qJRKxuJApeLxSt9kd1O7.jpg')
+	border-top: 1px solid #d9d9d9
+	border-bottom: 2px solid darkred
+
+.wrapper-content
 	overflow: visible
-	display: flex
-	flex-flow: row-reverse nowrap;
-	box-shadow: 1px 3px darkred
+	height: 100%
 
-	.wrapper-search		
-		width: 60%
-		flex: 1 1 60%
-		display: flex
+	.wrapper
+		position: absolute
+		max-width: unset
+		width: 700px
+		height: 300px
+		top: 130px
 
-		.wrapper
-			width: 80%
-			display: flex
+	.search-content
+		//display: none !important
+		position: relative
+		background: none
+		padding: 0
+		margin: 0
+		width: 100%
+    	height: 100%
 
-		.search-content
-			position: relative
-			float: none
-			width: 90%
-			height: 90%
-			margin: auto			
-			padding: 0
-			display: flex
-			justify-content: space-around
-			align-items: center			
-			border-radius: 0
-			background: rgba(255,255,255,0.4)
+		.s-title
+			display: none
 
-			.s-title
+		.search-box
+			position: absolute			
+
+		input, select, .chosen-single
+			border-radius: 4px
+			line-height: 40px
+			height: 40px
+			background: rgba(255, 255, 255, 0.9)
+			color: #737373
+
+		#fraza::-webkit-input-placeholder
+			color: #737373
+
+		#fraza::-moz-placeholder
+			color: #737373
+
+		#fraza::-ms-input-placeholder
+			color: #737373
+
+		.row6
+			margin-bottom: 0px
+
+		.chosen-results	
+			li
+				color: #737373				
+		
+		.date
+			label
 				display: none
 
-			.search-box
-				position: absolute
-				z-index: 50
-				width: 90%
-				flex: 1 1 670px			
+			.col-sm-6
+				.row6
+					label							
+						color: #737373
+						display: initial
+						background: rgba(255, 255, 255, 0.9)										
+						padding: 0 0 18px 3px										
+						border-radius: 4px 0 0 4px
+						border-top:	1px solid #bbbfc0
+						border-bottom: 1px solid #bbbfc0
+						border-left: 1px solid #bbbfc0	
 
-			input, select, .chosen-single
-				border-radius: 4px
-				line-height: 40px
-				height: 40px
-				background: rgba(255, 255, 255, 0.9)
-				color: #737373
+			#cena_do, #cena_od, #termin_od, #termin_do
+				border-radius: 0 4px 4px 0
+				border-left: none	
 
-			#fraza::-webkit-input-placeholder
-				color: #737373
+			.row6:nth-child(2)
+				margin-left: 0 !important
 
-			#fraza::-moz-placeholder
-				color: #737373
+			.col-xs-5								
+				padding: 0 !important
+				padding-right: 6px !important
 
-			#fraza::-ms-input-placeholder
-				color: #737373
+			.col-xs-1
+				padding: 0 !important
 
-			.row6
-				margin-bottom: 0px
+			#cena_od, #cena_do
+				background: rgba(255, 255, 255, 0.9) url('/img/icons/img06.png') right center no-repeat !important
 
-			.chosen-results	
-				li
-					color: #737373				
-			
-			.date
-				label
-					display: none
+			#termin_od, #termin_do
+				background: rgba(255, 255, 255, 0.9) url('/img/icons/img03.png') right center no-repeat !important
 
-				.col-sm-6
-					.row6
-						label							
-							color: #737373
-							display: initial
-							background: rgba(255, 255, 255, 0.9)										
-							padding: 0 0 18px 3px										
-							border-radius: 4px 0 0 4px
-							border-top:	1px solid #bbbfc0
-							border-bottom: 1px solid #bbbfc0
-							border-left: 1px solid #bbbfc0	
+		.btn-1
+			width: 100%
+			background-color: forestgreen
+			margin-top: 20px
+			border-radius: 4px
+			line-height: 44px
+			height: 44px
 
-				#cena_do, #cena_od, #termin_od, #termin_do
-					border-radius: 0 4px 4px 0
-					border-left: none	
+			&:hover
+				background-color: #167c2a	
 
-				.row6:nth-child(2)
-					margin-left: 0 !important
-
-				.col-xs-5								
-					padding: 0 !important
-					padding-right: 6px !important
-
-				.col-xs-1
-					padding: 0 !important
-
-				#cena_od, #cena_do
-					background: rgba(255, 255, 255, 0.9) url('/img/icons/img06.png') right center no-repeat !important
-
-				#termin_od, #termin_do
-					background: rgba(255, 255, 255, 0.9) url('/img/icons/img03.png') right center no-repeat !important
-
-			.btn-1
-				width: 100%
-				background-color: forestgreen
-				margin-top: 20px
-				border-radius: 4px
-				line-height: 44px
-				height: 44px
-
-				&:hover
-					background-color: #167c2a	
-
-	.description-box
-		width: 40%
-		flex: 1 1 40%
-		align-self: center
-		display: flex
-		justify-content: flex-end
-
-		.desc-content
-			margin: 0
-			width: 55%			
-			color: #fff
-
-			p
-				margin: 0
-
-			.btn-3
-				float: right
-				border: 1px solid forestgreen
-				padding: 10px 15px
-				background: forestgreen
-				color: #fff
-				top: -10px
-				font-weight: 400		
-
-				span
-					display: none
+	.banner-image	
 
 
 .content-box
 	position: relative
-	top: 80px
+	top: 70px
 
 .content-box-1
 	.title

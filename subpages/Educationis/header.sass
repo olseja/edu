@@ -1,30 +1,81 @@
 header
 	background: #fff
 
-	.header-box
-		height: 80px
+	.header-box		
+		float: none
+		height: 70px		
 		padding: 0
+		//box-shadow: 0 1px #d9d9d9
 
-		.logo
-			img
-				width: 200px
-				padding-top: 10px		
+	.wrapper-header
+		max-width: 100%
+		height: 70px
+		display: flex
+		justify-content: space-between
+		align-items: center
 
-		.main-menu
-			padding-top: 24px
+		.header-left-box
+			display: flex
+			align-items: center
 
-		.bkt-box
-			height: 50px
-			margin-top: 16px
-			padding-top: 7px			
+			.logo
+				padding: 0 30px
+
+				img
+					width: 160px
+					max-width: 100%
+
+			.main-menu
+				padding: 0
+
+				.menu_3, .menu_8, .menu_4 //tych menu docelowo nie bedzie
+					display: none
+
+				li
+					margin-left: 20px
+
+		.header-right-box
+			display: flex
+			align-items: center
+
+			.join-us
+				display: flex
+				align-items: center
+				justify-content: center
+				height: 70px
+				width: 150px
+				background-color: #5ca05c
+				color: #fff
+				text-transform: uppercase
+				//border-radius: 4px
+				text-decoration: none
+
+				&:hover
+					background: #6bb76b					
+
+			.bkt-box
+				display: flex
+				align-items: center
+				justify-content: center
+				height: 70px
+				width: 70px
+				margin-top: 0
+				margin-left: 0
+				padding: 0
+				border: none				
+				background: #fff
+
+				.ic-1
+					background: url('/img/sprite.png') 0 0 no-repeat
+				
 
 .bottom-box
 	position: relative
-	top: 80px
+	top: 70px
 
 footer
 	position: relative
-	top: 80px	
+	top: 70px	
 
 	// menu testowe na stronie pl/test-home
 	.menu-test
