@@ -13,7 +13,8 @@
 	background-repeat: no-repeat	
 	background-size: cover
 	background-position: bottom center
-	background-image: url('https://download.fotolia.com/Content/CompImage500/FotoliaComp_92365513_o7ukCKN52y0AZBIWT53bZ2pcLbWHRsv5_W95')
+	background-image: url('https://download.fotolia.com/Content/CompImage500/FotoliaComp_92365513_o7ukCKN52y0AZBIWT53bZ2pcLbWHRsv5_NW40')
+	//background-image: url('./img/banner-test.jpg')
 	//background-position: 0 90%
 	//background-image: url('https://t3.ftcdn.net/jpg/01/77/77/52/240_F_177775266_dWpqzJATdWK4qJRKxuJApeLxSt9kd1O7.jpg')
 	border-top: 1px solid #d9d9d9
@@ -21,140 +22,11 @@
 
 .wrapper-content
 	overflow: visible
+	max-width: 1400px
 	height: 100%
 	display: flex
 
-	.wrapper
-		position: absolute
-		max-width: unset
-		width: 800px
-		height: 270px
-		top: 160px		
-
-	.search-content
-		display: flex
-		align-items: center
-		justify-content: center
-		position: relative
-		background: none
-		padding: 0
-		margin: 0
-		width: 100%
-		height: 100%	
-		//background: rgba(255, 255, 255, 0.8)
-		background: #964848
-		border-radius: 10px
-		//border: 1px solid darkred
-
-		&:before
-			content: "jakiego szkolenia szukasz?"
-			position: absolute			
-			top: 15px
-			text-shadow: 2px 1px darkslategrey
-			color: #fff
-			text-transform: uppercase
-			font-size: 22px
-			font-family: 'Roboto Slab'			
-
-		.s-title
-			display: none
-
-		.search-box
-			position: absolute
-			align-self: flex-end
-			width: 100%		
-			padding: 0 50px
-			padding-bottom: 30px
-
-		input, select, .chosen-single, label
-			border-radius: 4px
-			line-height: 42px
-			height: 42px
-			//background: rgba(255, 255, 255, 0.9)
-			color: #737373
-
-		#fraza::-webkit-input-placeholder
-			color: #737373
-
-		#fraza::-moz-placeholder
-			color: #737373
-
-		#fraza::-ms-input-placeholder
-			color: #737373
-
-		.row6
-			margin-bottom: 0px
-
-		.chosen-results	
-			li
-				color: #737373				
-		
-		.date
-			display: inline-block
-			width: 50%
-
-			label
-				display: none
-
-			.col-sm-6:nth-child(2) //niewidoczna cena
-				display: none
-
-			.col-sm-6 //termin
-				width: 100%
-				padding-right: 0 !important
-
-				.row6
-
-					label													
-						display: initial
-						//background: rgba(255, 255, 255, 0.9)
-						background: #fff
-						padding: 0 0 18px 3px										
-						border-radius: 4px 0 0 4px
-						border-top:	1px solid #bbbfc0
-						border-bottom: 1px solid #bbbfc0
-						border-left: 1px solid #bbbfc0	
-
-			#cena_do, #cena_od, #termin_od, #termin_do
-				border-radius: 0 4px 4px 0
-				border-left: none	
-
-			.row6:nth-child(2)
-				margin-left: 0 !important
-
-			.col-xs-5								
-				padding: 0 !important
-				padding-right: 6px !important
-
-			.col-xs-1
-				padding: 0 !important			
-
-			#termin_od, #termin_do
-				//background: rgba(255, 255, 255, 0.9) url('/img/icons/img03.png') right center no-repeat !important				
-
-		.row6:nth-child(5) //button				
-			display: inline-block
-			width: 50%
-			float: right
-			margin: 0 !important
-
-			div
-				padding-right: 0 !important
-
-		.btn-1
-			position: relative
-			width: 100%
-			background-color: #9EBD00			
-			border-radius: 4px
-			line-height: 38px
-			height: 38px
-			box-shadow: 0 4px #6c8008
-			transition: none
-			text-shadow: 2px 1px #6c8008
-
-			&:hover					
-				box-shadow: 0 2px #6c8008
-				top: 2px
+	@import	./subpages/Educationis/homepage-search.sass
 
 	.banner-right
 		position: absolute
@@ -196,7 +68,7 @@
 .content-box
 	position: relative
 	top: 70px
-	margin-top: 50px
+	padding-top: 50px
 	
 
 .content-box-1	
@@ -232,3 +104,61 @@
 	.title
 		a
 			color: #444
+
+.content-box-3
+	background: #e6eaec
+	padding: 80px 0
+
+	img
+		width: 100px
+		height: 100px
+		margin-right: 20px
+
+	h2
+		letter-spacing: 0.5px
+		margin-bottom: 5px
+
+	h3
+		color: grey
+		margin-top: 0
+
+	p
+		margin-bottom: 0
+		margin-top: 20px		
+	
+	.box-3-title
+		width: 100%
+		text-align: center
+		font-size: 24px
+		position: relative
+		top: -40px
+
+	.boxes3
+		display: flex
+		float: left
+		width: 50%
+	
+	.box-3-txt
+		position: relative
+
+	.box-3-left
+		padding-right: 40px
+
+	.box-3-right
+		padding-left: 40px
+
+	.box-3-btn		
+		position: absolute
+		right: 0
+		color: #9EBD00
+		background: none
+		border: none
+		border-radius: 4px		
+		transition: all 0.3s		
+
+		&:hover			
+			color: #88a00a
+
+
+	
+		
