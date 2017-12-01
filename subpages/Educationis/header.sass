@@ -69,11 +69,29 @@
 				border: none				
 				background: #fff
 
-				.ic-1
-					background: url('/img/sprite2.png') 0 0 no-repeat
-
 				&:hover .ic-1
 					opacity: 0.6
+
+				&:hover #basket-count
+					background: #808080
+
+			.basket-btn
+				position: relative
+
+				.ic-1					
+					background: url('/img/sprite2.png') 0 0 no-repeat
+
+				#basket-count
+					border: 1px solid #fff
+					background: #b3b3b3
+					color: #fff
+					border-radius: 8px
+					padding: 1px 6px
+					font-size: 11px					
+					top: -6px
+					right: 0
+					position: absolute
+
 
 			.basket-list
 				right: 10px
